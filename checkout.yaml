@@ -1,0 +1,4 @@
+- name: Manually checkout default branch
+  run: |
+    git clone --single-branch https://github.com/${{ github.repository }}.git
+    git checkout $ref
